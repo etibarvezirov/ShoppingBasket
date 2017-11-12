@@ -1,0 +1,11 @@
+   [
+
+        { "id":0, "name": "Jacket", "price": 12 },
+        	
+        { "id":1, "name": "Trainers", "price": 24 },
+
+        { "id":2, "name": "Cap", "price": 9 },
+       
+        { "id":3, "name": "Trousers", "price": 44 }
+        	
+   ]

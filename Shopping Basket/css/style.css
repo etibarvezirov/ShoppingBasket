@@ -1,0 +1,40 @@
+.sale {
+
+			border: 1px solid green;
+			padding: 20px;
+			width: 40%;
+			margin:0 auto;
+			border-radius: 25px;
+		}
+
+		.div_line {
+
+			border-top: 1px solid green;
+		}
+
+		.srch {
+
+			border-right: none;
+			border-left: none;
+			border-top: none;
+			border-bottom: 1px solid green;
+		}
+		.li_open {
+
+			padding: 10px;
+		}
+		.fnt {
+
+			font-family: Verdana;
+			color:green;
+		}
+
+		button {
+
+            border-radius: 5px;
+            border:none;
+            color:green;
+            background-color: green;
+            color:white;
+            margin: 0px 5px 0px 5px;
+		}

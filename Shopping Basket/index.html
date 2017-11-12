@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="myShop">
+<head>
+	<title>Online magazine</title>
+	<script src="lib/angular.min.js"></script>
+	<script src="js/app.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body class="fnt">
+
+<blockquote class="sale" ng-controller="AppCtrl">
+	<h2>{{appTitle}}</h2>
+	<div class="div_line"></div>
+
+	<p>Find item : <input class="srch" type="text" ng-model="searchItem"></p>
+<ul>
+	<li class="li_open" ng-repeat="item in items | filter: searchItem"><button ng-click="addItem(item)">+</button>  {{ item.name }} - {{item.price}} AZN</li>
+</ul>
+
+<h2>{{basket}}</h2>
+<ul>
+<li class="li_open" ng-repeat="myItem in myItems"><button ng-click="removeItem(myItem)">x</button> {{myItem.name}} - {{ myItem.count }} item(s) - {{ myItem.price }} AZN - <b> {{ myItem.count * myItem.price }} AZN </b> 
+</li>
+</ul>
+<div class="div_line"></div>
+<h2>Total: {{ totalPrice }} AZN</h2>
+</blockquote>
+</body>
+</html>
